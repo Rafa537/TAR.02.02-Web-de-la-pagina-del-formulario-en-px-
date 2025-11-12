@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0; 
+    background-color: #2b3a2c;
+    color: #333333;
+    /* Contexto de 1200px */
+    max-width: 1200px; 
+}
+
+/* El contenedor principal (1160px de ancho + 20px de padding a cada lado = 1200px total) */
+.contenedor-principal {
+    background-color: #a7c957;
+    width: 1160px; /* 96.67% de 1200px = 1160px */ 
+    padding: 20px 20px; /* 1.67% de 1200px = 20px */
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+/* --- Cabecera y Título --- */
+.header-principal {
+    background-color: #cfe18f;
+    color: #386641;
+    padding: 30px 0; /* 2.5% de 1200px = 30px */
+    text-align: center;
+    border-bottom: 3px solid #6a994e;
+}
+
+/* --- Menú de Navegación --- */
+.menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px; /* 0.42% de 1200px ≈ 5px */
+    padding-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px; /* 1.25% de 1200px = 15px */
+    display: block;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* --- Submenú Desplegable --- */
+.caja-causas {
+    display: none;
+    position: absolute;
+    background-color: #386641;
+    width: 350px; /* 29.17% de 1200px ≈ 350px */
+    z-index: 100;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    left: -120px; /* -10% de 1200px = -120px */
+}
+
+/* --- Títulos --- */
+.titulo-seccion {
+    text-align: center;
+    color: #386641;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* 1. Columna Izquierda (Aside) */
+.sidebar-izquierda {
+    float: left;
+    width: 25%;
+    /* 🔴 CORRECCIÓN: Usar 10px, NO un porcentaje. */
+    padding: 10px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #cfe18f;
+    min-height: 500px;
+    border-right: 2px solid #6a994e;
+    border: none;
+}
+
+
+
+.caja-lateral {
+    padding: 10px 10px; /* 3.33% de 300px (ancho interno) ≈ 10px */
+    border: 1px solid #6a994e;
+}
+
+.caja-lateral img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-bottom: 10px;
+}
+
+/* 2. Columna Derecha (Formulario) */
+.formulario-derecha {
+    float: right;
+    width: 75%;
+    /* 🔴 CORRECCIÓN: Usar 10px, NO un porcentaje. */
+    padding: 10px; 
+    box-sizing: border-box;
+    border: none;
+}
+
+/* --- Estilos del Formulario --- */
+form {
+    margin: 0px; 
+    padding: 20px 20px; /* 2.22% de 900px (ancho interno) ≈ 20px */
+    border: 2px solid black;
+    background-color: rgb(36, 237, 83); 
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box; 
+    font-weight: bold;
+    border-color: rgb(22, 19, 24); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Estilo para los campos de texto y selección */
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 90%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: blue;
+}
+
+/* Estilo para el botón Enviar (ancho entero) */
+.boton-enviar-ancho-entero {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* --- Pie de Página --- */
+.footer-privacidad {
+    background-color: #386641;
+    color: white;
+    text-align: center;
+    padding: 15px 15px; /* 1.25% de 1200px = 15px */
+    font-size: 14px;
+    width: 100%; 
+    box-sizing: border-box;
+}
